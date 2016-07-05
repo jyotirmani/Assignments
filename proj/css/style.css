@@ -1,0 +1,139 @@
+.container_12{
+  	margin-left: auto;
+  	margin-right: auto;
+  	text-align: left;
+}
+
+nav{
+	background: white;
+}
+
+nav li{	
+	display: inline; 
+	margin-left: auto; 
+	padding-right: 0	; 
+	margin-top: 50px;
+	width: 60%
+}
+
+nav li:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+ul a{
+	text-decoration: none;
+}
+
+li {
+	display: inline;
+	text-decoration: none;
+	float: right;
+}
+
+.primary{
+  	margin-left: auto;
+  	margin-right: auto;
+  	text-align: left;
+}
+
+header{
+	background: white;
+}
+
+.main{
+	margin: 30px 0;
+}
+
+.hero .heroimg .herotext{
+	height: 650px;
+}
+
+.hero {
+  	width: 100%;
+}
+
+.heroimg {
+  	width: 40%;
+  	float: left;
+}
+.herotext {
+  	text-align: left;
+  	width: 60%;
+  	float: right
+}
+
+body{
+	background: #E4EAEF
+}
+h1{
+	margin-top: 25px;
+	font-size: 50px;
+	text-shadow: 5px 1px 1px grey;
+}
+
+footer{
+	background: grey;
+	height: 80px;
+}
+
+.sec2{
+	margin: 30px 0;
+  	margin-left: auto;
+  	margin-right: auto;
+  	text-align: left;
+}
+
+.col1{
+	height: 100px;
+	margin-left: 0;
+	margin-right: 400px;
+}
+.col2{
+	height: 100px;
+	margin-left: 0;
+	margin-right: 400px;
+}
+.col3{
+	height: 100px;
+	margin-left: 0;	
+	margin-right: 400px;
+}
+
+p{
+	font-family: sans-serif;
+	color: grey;
+}
+
+h5{
+	color: grey;
+}
+
+h6{
+	color: grey;
+	size: 10px;
+}
+
+h2{
+	margin-top: 40px;
+}
+
+.portfolio {	
+	display: inline; 
+	background: #61AB77;
+	display: block;
+}
+
+.portfolio1 {	
+	display: inline; 
+	background: #e1e1e1;
+	display: block;
+	line-height: 75px;
+}
+
+.float-left {
+    float: left;
+}
+.float-right{
+    float: right;
+}
