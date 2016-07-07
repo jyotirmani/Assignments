@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		 <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.css" /> 
+		 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Font+Name">
+		
+		<!-- Website Title & Description for Search Engine purposes -->
+		<title></title>
+		<meta name="description" content="">
+		
+		<!-- Mobile viewport optimized -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		
+		<!-- Bootstrap CSS -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+		
+		<!-- Custom CSS -->
+		<link href="includes/css/styles.css" rel="stylesheet">
+		
+		<!-- Include Modernizr in the head, before any other Javascript -->
+		<script src="includes/js/modernizr-2.6.2.min.js"></script>
+		
+	</head>
+	<body>
+
+	<!-- Your Code Goes Here. Remember to remove this comment once you've started, you don't need it :) -->
+	<div class="container" id="main">
+		<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<div class="navbar navbar-fixed-top">
+			<a class="navbar-brand" href="/"><img src="images/logo_sg1.png" width="25px" height="25px" alt="Your Logo">SourceGuru</a>
+
+			<div class="nav-collapse collapse navbar-responsive-collapse">
+				<ul class="nav navbar-nav">
+					<li class="active">
+						<a href="#">Home</a>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Services</a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="#">Web Menu</a>
+							</li>
+							<li>
+								<a href="#">Web Design</a>
+							</li>
+							<li>
+								<a href="#">Web Module</a>
+							</li>
+							<li>
+								<a href="#">DEO</a>
+							</li>
+							<li class="divider">
+							<li class="dropdown-header">More Services</li>								
+							<li>
+								<a href="#">Content Creation</a>
+							</li>
+							<li>
+								<a href="#">Social Media Marketing</a>
+							</li>
+							<li>
+								<a href="#">Kookery classes</a>
+							</li>
+		
+
+
+							</li>														
+						</ul>
+					</li>					
+				</ul>
+				<form class="navbar-form pull-left">
+					<input type="text" class="form-control" placeholder="Search this site..." id="searchInput">
+					<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+				</form>
+				<ul class="nav navbar-nav pull-right">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>My Account</a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="#"><span class="glyphicon glyphicon-wrench"></span>Settings</a>
+							</li>
+							<li>
+								<a href="#"><span class="glyphicon glyphicon-refresh"></span>Update Profile</a>
+							</li>
+							<li>
+								<a href="#"><span class="glyphicon glyphicon-briefcase"></span>Billing</a>
+							</li>
+							<li>
+								<a href="#"><span class="glyphicon glyphicon-off"></span>Singout</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="carousel slide" id="myCarousel">
+			<ol class="carousel-indicators">
+				<li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+				<li data-slide-to="1" data-target="#myCarousel"></li>
+				<li data-slide-to="2" data-target="#myCarousel"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="item active" id ="slide1">
+				
+				
+					<div class="carousel-caption">
+						<h4>Bootstrap 3</h4>
+						<p>Learn how to build your First responsive website with the brand new twitter bootstrap</p>
+					</div>
+					</div>
+					<div class="item" id ="slide2">
+
+					<div class="carousel-caption">
+						<h4>Learn to code website in 4 hours</h4>
+						<p>Learn how to build your First responsive website with the brand new twitter bootstrap</p>
+					</div>
+				</div>
+				<div class="item" id ="slide3">
+	
+					<div class="carousel-caption">
+						<h4>Web hosting 101</h4>
+						<p>Learn how to build your First responsive website with the brand new twitter bootstrap</p>
+					</div>
+				</div>				
+			</div>
+			<a class="left carousel-control" data-slide="prev" href="#myCarousel"><span class="icon-prev"></span></a>
+			<a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="icon-next"></span></a>
+		</div>
+
+		<div class="row" id="bigCallout">
+			<div class="col-12">
+				
+				<div class="alert alert-success alert-block fade in" id="successAlert">
+					<button type="button" class="close" data-dismiss="alert">&times;</button>
+					<h4>Success!</h4>
+					<p>You just made this element display by jQuery. Click "x" to close this at top right corner.</p>
+
+				</div>
+				<!--Visible only on small device-->
+				<div class="well well-small visible-sm">
+					<a href="" class="btn btn-large btn-block btn-default"><span class="glyphicon glyphicon-phone"></span> Give us a call</a>
+				</div>
+				<div class="well">
+					<div class="page-header">
+						<h1>A Fancy Header<small>A sub header text for extra awesome</small></h1>
+					</div>
+					<p class="lead">Some solid leading copy will help get your user engagement. Use this area to come up with something real nice. know what i am saying.</p>
+					<a href="" class="btn btn-large btn-primary" id="alertMe">Click a nice big button</a>
+					<a href="" class="btn btn-large btn-link">or a Secondary link</a>
+				</div>
+				
+			</div>
+		</div>
+
+		<div class="row" id="featureHeading">
+			<div class="col-12">
+				<h2>More Features</h2>
+				<p class="lead">Poutine tattooed polaroid mixtape pinterest squid wolf, you probably haven't heard of them craft beer hella retro fanny pack gochujang.</p>
+			</div>			
+		</div>
+
+		<div class="row" id="features">
+			<div class="col-sm-4 feature">
+				<div class="panel">
+					<div class="panel-heading">
+						<h3 class="panel-title">Markup with HTML5!</h3>
+					</div>
+					<img src="images/badge_html5.jpg" alt="HTML5" class="img-circle">
+					<p> Tumblr beard craft beer selfies blue bottle paleo.</p>
+					<a href="https://www.udemy.com" target="_blank" class="btn btn-warning button-block">Learn to code HTML5!</a>
+				</div>
+			</div>
+			<div class="col-sm-4 feature">
+				<div class="panel">
+					<div class="panel-heading">
+						<h3 class="panel-title">Style with CSS3!</h3>
+					</div>
+					<img src="images/badge_css3.jpg" alt="CSS3" class="img-circle">
+					<p> Tumblr beard craft beer selfies blue bottle paleo.</p>
+					<a href="https://www.udemy.com" target="_blank" class="btn btn-danger button-block">Style with CSS3!</a>
+				</div>
+			</div>
+			<div class="col-sm-4 feature">
+				<div class="panel">
+					<div class="panel-heading">
+						<h3 class="panel-title">Framework by Bootstrap3!</h3>
+					</div>
+					<img src="images/badge_bootstrap.jpg" alt="Bootstrap 3" class="img-circle">
+					<p> Tumblr beard craft beer selfies blue bottle paleo.</p>
+					<a href="https://www.getbootstrap.com" target="_blank" class="btn btn-info button-block">Framework by Bootstrap3!</a>
+				</div>
+			</div>			
+		</div>
+		<div class="row" id="moreInfo">
+			<div class="col-sm-6">		
+				<h3>Neat Tabable Content</h3>	
+				<div class="tabable">
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#tab1" data-toggle="tab">Section 1</a></li>
+						<li><a href="#tab2" data-toggle="tab">Section 2	</a></li>
+					</ul>
+
+					<div class="tab-content">
+						<div class="tab-pane active" id="tab1">
+							<h4><span class="glyphicon glyphicon-map-marker"></span> Our Location<small>More like our favorite serve spot</small></h4>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15554.464313705124!2d77.69369464999998!3d12.9323792!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1467714233436" width="500" height="100" frameborder="0" style="border:0" allowfullscreen></iframe>
+							<p>Poutine tattooed polaroid mixtape pinterest squid wolf, you probably haven't heard of them craft beer hella retro fanny pack gochujang. Tumblr beard craft beer selfies blue bottle paleo. Semiotics yr pinterest, meditation four loko waistcoat keytar post-ironic seitan hella crucifix. Art party iPhone viral vegan selvage everyday carry, mlkshk direct trade farm-to-table narwhal stumptown beard. Kogi cray waistcoat polaroid, VHS irony cliche poutine typewriter tumblr tacos pop-up venmo truffaut drinking vinegar. Quinoa fashion axe four loko retro hella literally. Kombucha cliche godard photo booth jean shorts PBR&B tote bag asymmetrical.</p>
+							<p>Poutine tattooed polaroid mixtape pinterest squid wolf, you probably haven't heard of them craft beer hella retro fanny pack gochujang. Tumblr beard craft beer selfies blue bottle paleo. Semiotics yr pinterest, meditation four loko waistcoat keytar post-ironic seitan hella crucifix. Art party iPhone viral vegan selvage everyday carry, mlkshk direct trade farm-to-table narwhal stumptown beard. Kogi cray waistcoat polaroid, VHS irony cliche poutine typewriter tumblr tacos pop-up venmo truffaut drinking vingar. Quinoa fashion axe four loko retro hella literally. Kombucha cliche godard photo booth jean shorts PBR&B tote bag asymmetrical.</p>
+						</div>						
+						
+									
+						<div class="tab-pane" id="tab2">
+							<h4>Left floated Picture<small>Using Placehold it</small></h4>
+							<img src="images/beutiful.png" width="500" height="200" frameborder="0" style="border:0"  class="thumbnail">
+							<p>Poutine tattooed polaroid mixtape pinterest squid wolf, you probably haven't heard of them craft beer hella retro fanny pack gochujang. Tumblr beard craft beer selfies blue bottle paleo. Semiotics yr pinterest, meditation four loko waistcoat keytar post-ironic seitan hella crucifix. Art party iPhone viral vegan selvage everyday carry, mlkshk direct trade farm-to-table narwhal stumptown beard. Kogi cray waistcoat polaroid, VHS irony cliche poutine typewriter tumblr tacos pop-up venmo truffaut drinking vingar. Quinoa fashion axe four loko retro hella literally. Kombucha cliche godard photo booth jean shorts PBR&B tote bag asymmetrical.</p>
+							<hr>
+							<a href="#myModal" role="button" class="btn btn-warning" data-toggle="modal"><span class="glyphicon glyphicon-hand-up"></span>Click here for Modal Window</a>
+
+		                    <div class="modal fade" id="myModal">
+		                        
+		                        <div class="modal-dialog">
+		                            
+		                                <div class="modal-content">
+		                                    <div class="modal-header">
+		                                        <button class="close" data-dismiss="modal">&times;</button>
+		                                        <h4 class="modal-title">Hello Modal window</h4>
+		                                    </div>
+		                                    <div class="modal-body">
+		                                        <h4>body header</h4>
+		                                        <p>asd,jvuhgakuydfvauytdfvkafdkvyuasf asfkd yutad cyadec kuyau yxaue xyrdt fxmtx kyatdxef ytax kyatd xfkaytdxf yatdxf kayetx faytdx fkytdxf  </p>
+		                                        <h4>Popover in a modal</h4>
+		                                        <a href="/" class="btn btn-danger pop" data-toggle="popover" data-placement="top" data-original-title="You clicked it" data-contenet="I know you would..">dont click</a>
+		                                        <h4>tool tip in modal</h4>
+		                                        <a href="#" data-original-title="Tooltips" rel="tooltip">This link</a> should have a tooltip, and so should have <a href="#" data-original-title="Wohoo" rel="tooltip">this one</a>!
+		                                        <hr>
+		                                        <p><small class="text-muted">this form doent do anything. just heads up</small></p>
+		                                        <form class="form-horizontal">
+													<div class="form-group">
+														<label class="col-lg-2" control lebel for ="inputName">Name</label>
+														<div class="col-lg-10">
+															<input class="form-control" id="inputName" placeholder="Name" type="text">
+														</div>
+													</div>
+													<div class="form-group">
+														<label class="col-lg-2" control lebel for ="inputEmail">Email</label>
+														<div class="col-lg-10">
+															<input class="form-control" id="inputEmail" placeholder="Email" type="text">
+														</div>
+													</div>
+													<div class="form-group">
+														<label class="col-lg-2" control lebel for ="inputMessage">Message</label>
+														<div class="col-lg-10">
+															<textarea class="form-control" id="inputMessage" placeholder="Message" rows="3"></textarea>
+															<button class="btn btn-success pull-right" type="submit">Submit</button>
+														</div>
+													</div>																										
+												</form>
+												<div class="modal-footer">
+													<button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+													<button class="btn btn-primary" data-dismiss="modal" type="button">Save Changes</button>
+												</div><!--End of modal-footer-->	
+		                                    </div>
+
+		                                </div>
+
+		                        </div>
+		                    
+		                    
+		                    </div>
+
+
+
+						</div><!--End of tab2-pane-->
+					</div><!--End of tab-Content-->
+
+					
+				</div>
+			</div>
+			<div class="col-sm-6">
+				<h3>Some text info</h3>
+				<p>Poutine tattooed polaroid mixtape pinterest squid wolf, you probably haven't heard of them craft beer hella retro fanny pack gochujang. Tumblr beard craft beer selfies blue bottle paleo. Semiotics yr pinterest, meditation four loko waistcoat keytar post-ironic seitan hella crucifix. Art party iPhone viral vegan selvage everyday carry, mlkshk direct trade farm-to-table narwhal stumptown beard. Kogi cray waistcoat polaroid, VHS irony cliche poutine typewriter tumblr tacos pop-up venmo truffaut drinking vinegar. Quinoa fashion axe four loko retro hella literally. Kombucha cliche godard photo booth jean shorts PBR&B tote bag asymmetrical.</p>
+				<h4>A list Group</h4>
+				<div class="list-group">
+					<a href="#" class="list-group-item">
+					<h4 class="list-goup-itme-heading">Kale</h4>
+					<p>Kombucha cliche godard photo booth jean shorts PBR&B tote bag asymmetrical.</p>
+					</a>
+					<a href="#" class="list-group-item">
+					<h4 class="list-goup-itme-heading">Carot</h4>
+					<p>Kombucha cliche godard photo booth jean shorts PBR&B tote bag asymmetrical.</p>
+					</a>
+					<a href="#" class="list-group-item">
+					<h4 class="list-goup-itme-heading">Oats</h4>
+					<p>Kombucha cliche godard photo booth jean shorts PBR&B tote bag asymmetrical.</p>
+					</a>					
+				</div>
+			</div>
+		</div>
+
+		<hr>
+		
+		<div class="row" id="moreCorousel">
+			<div class="col-12">
+			<h3>Learn more about Web design</h3>
+			<div class="thumbnails row">
+				<div class="col-6">
+					<div class="thumbnail">
+						<img src="images/freeaccess.png" alt="web hosting 101">
+						<div class="label label-success price"><span class="glyphicon glyphicon-tag"></span><sup>$</sup>6.3</div>
+						<div class="caption">
+							<h3>FreeAccess</h3>
+							<p>This template suits for interior design company or furniture production company. This is simple and cost effective one page template aimed at creative professionals. It has a large set of features helping to bring your interior design business on-line in an easy and human friendly way. The theme is easy to customize, it has well structured and well commented HTML5 code. Being built with bootstrap the code is valid and helps to promote your website in search engines easily.</p>
+							<p><a href="http://www.sourcecode.guru/html5/freeaccess-html-template/" class="btn btn-primary" class="btn btn-small btn-link">Learn more</p></a>
+							
+						</div>
+					</div>
+					
+				</div>
+				<div class="col-6">
+					<div class="thumbnail">
+						<img src="images/selfdone.png" alt="web hosting 101">
+						<div class="label label-success price"><span class="glyphicon glyphicon-tag"></span><sup>$</sup>11.9</div>
+						<div class="caption">
+							<h3>Selfdone!</h3>
+							<p>ABOUT SELFDOM - MULTI-CONCEPT PORTFOLIO -FREELANCER / AG:
+							Selfdom is a new portfolio concept for creative agencies and freelancers. This template helps graphic designers, illustrators, photographers or any kind of creative to create a quick & easy portfolio to showcase their work with a creative and distinctive touch, in the most clean and minimal way.</p>
+							<p><a href="http://www.sourcecode.guru/html5/selfdom-multi-concept-portfolio-freelancer-agency/" class="btn btn-primary" class="btn btn-small btn-link">Learn more</p></a>
+							
+						</div>
+					</div>
+					
+				</div>
+				</div>
+				
+			</div>
+		</div>		
+
+	</div>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-2">
+					<h6>Copyright &copy; 2016 {Jyotirmani}</h6>
+				</div>
+				<div class="col-sm-4">
+					<h6>About us</h6>
+					<p>Poutine tattooed polaroid mixtape pinterest squid wolf, you probably haven't heard of them craft beer hella retro fanny pack gochujang. Tumblr beard craft beer selfies blue bottle paleo.</p>
+				</div>
+				<div class="col-sm-2">
+					<h6>Navigation</h6>
+					<ul class="unstyled">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Services</a></li>
+						<li><a href="#">Links</a></li>
+						<li><a href="#">Contacts</a></li>
+					</ul>					
+				</div>
+				<div class="col-sm-2">
+					<h6>Follow us</h6>
+					<ul class="unstyled">
+						<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a></li>
+						<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a></li>
+						<li><a href="#"><i class="fa fa-paypal" aria-hidden="true"></i> Paypal</a></li>
+						<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i> Google plus</a></li>
+						<li><a href="#"><i class="fa fa-google" aria-hidden="true"></i> Google</a></li>
+						<li><a href="#"><i class="fa fa-git" aria-hidden="true"></i> Github</a></li>
+					</ul>					
+				</div>
+				<div class="col-sm-2">
+					<h6>Coded with<span class="glyphicon glyphicon-heart"></span>By Brad</h6>					
+				</div>				
+			</div>			
+		</div>
+	</footer>
+	<!-- All Javascript at the bottom of the page for faster page loading -->
+		
+	<!-- First try for the online version of jQuery-->
+	<script src="http://code.jquery.com/jquery.js"></script>
+	
+	<!-- If no online access, fallback to our hardcoded version of jQuery -->
+	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+	
+	<!-- Bootstrap JS -->
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	
+	<!-- Custom JS -->
+	<script src="includes/js/script.js"></script>
+	
+	</body>
+</html>
+
