@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.css" /> 
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Font+Name">
+
+		<!-- Website Title & Description for Search Engine purposes -->
+		<title></title>
+		<meta name="description" content="">
+
+		<!-- Mobile viewport optimized -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<!-- Bootstrap CSS -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+
+		<!-- Custom CSS -->
+		<link href="includes/css/styles.css" rel="stylesheet">
+
+		<!-- Include Modernizr in the head, before any other Javascript -->
+		<script src="includes/js/modernizr-2.6.2.min.js"></script>
+
+	</head>
+
+	<body>
+
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" data-toggle="collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="/"><img src="images/general/r_logo.png" width="75px" height="35px" alt="Your Logo"></a>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<a href="index.html">Home</a>
+						</li> 
+						<li>
+							<a href="#">Recipe Gallery</a>
+						</li>
+						<li>
+							<a href="#">About</a>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Services</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">Blog</a>
+								</li>
+								<li>
+									<a href="Courses.html">Cookery classes</a>
+								</li>
+								<li>
+									<a href="#">Sight Map</a>
+								</li>
+								<li class="divider"
+								<li class="dropdown-header">More Services</li>								
+								<li>
+									<a href="#">Content Creation</a>
+								</li>
+								<li>
+									<a href="#">Social Media Marketing</a>
+								</li>
+							</li>														
+						</ul>
+					</li>					
+				</ul>
+				<form class="navbar-form navbar-left">
+					<input type="text" class="form-control" placeholder="Search this site..." id="searchInput">
+					<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+				</form>
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="portfolio.html"><span class="glyphicon glyphicon-shopping-cart">Shopping</span></a>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span>My Account</a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="#"><span class="glyphicon glyphicon-wrench"></span>Settings</a>
+							</li>
+							<li>
+								<a href="#"><span class="glyphicon glyphicon-refresh"></span>Update Profile</a>
+							</li>
+							<li>
+								<a href="#"><span class="glyphicon glyphicon-briefcase"></span>Billing</a>
+							</li>
+							<li>
+								<a href="#"><span class="glyphicon glyphicon-off"></span>Singout</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	</nav>
+
+	<div class="carousel slide" id="myCarousel">
+		<ol class="carousel-indicators">
+			<li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+			<li data-slide-to="1" data-target="#myCarousel"></li>
+			<li data-slide-to="2" data-target="#myCarousel"></li>
+			<li data-slide-to="3" data-target="#myCarousel"></li>
+			<li data-slide-to="4" data-target="#myCarousel"></li>				
+		</ol>
+		<div class="carousel-inner">
+			<div class="item active" id ="slide1">
+				<div class="carousel-caption">
+					<h4>Basic and advance cake</h4>
+					<p>Learn how to make your Basic and advance cake</p>
+				</div>
+			</div>
+			<div class="item" id ="slide2">
+				<div class="carousel-caption">
+					<h4>Chocolates</h4>
+					<p>Learn how to make Basic and advance Chocolate. </p>
+				</div>
+			</div>
+			<div class="item" id ="slide3">
+				<div class="carousel-caption">
+					<h4>Cookies</h4>
+					<p>Learn how to make Cookies</p>
+				</div>
+			</div>	
+			<div class="item" id ="slide4">
+				<div class="carousel-caption">
+					<h4>Pie and Tarts</h4>
+					<p>Learn how to make Pie and Tarts</p>
+				</div>
+			</div>
+			<div class="item" id ="slide5">
+				<div class="carousel-caption">
+					<h4>Puff</h4>
+					<p>Learn how to make Puff</p>
+				</div>
+			</div>											
+		</div>
+		<a class="left carousel-control" data-slide="prev" href="#myCarousel"><span class="icon-prev"></span></a>
+		<a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="icon-next"></span></a>
+	</div>
+
+	<div class="container">
+		<div class="row" id="bigCallout">
+			<div class="col-12">
+
+				<div class="alert alert-success alert-block fade in" id="successAlert">
+					<button type="button" class="close" data-dismiss="alert">&times;</button>
+					<h4>Success!</h4>
+					<p>You just made this element display by jQuery. Click "x" to close this at top right corner.</p>
+
+				</div>
+				<!--Visible only on small device-->
+				<div class="well well-small visible-sm">
+					<a href="" class="btn btn-large btn-block btn-default"><span class="glyphicon glyphicon-phone"></span> Give us a call</a>
+				</div>
+				<div class="well">
+					<div class="page-header">
+						<h1>Bake N Kokk with Rashmi<small>Baking, Chocolate making and Cookery classes</small></h1>
+					</div>
+					<p class="lead">Baking classes in bangalore<br>WELCOME TO RASHMI'S COOKING CLASS</p><br>
+					<a href="#myModal1" role="button" class="btn btn-warning" data-toggle="modal"><span class="glyphicon glyphicon-hand-up"></span>Click here for Modal Window</a>
+					<a href="" class="btn btn-large btn-primary" id="alertMe">Click a button to see alert</a>
+					<a href="" class="btn btn-large btn-link">or a Secondary link</a>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="row" id="featureHeading">
+			<div class="col-12">
+				<h2>About me</h2>
+				<p class="lead">Rashmi cooking class is an initiative to pass the art of quality cooking by organizing regular cooking camp.</p>
+				<p><large>I take the class myself and thesee are held in small groups of 4-5 people, which ensures individual attention. I give the student an opportunity to get principal hands on experience. Each class is for one day for 3-4 hours. Classes are scheduled both on variety of dishes beked in convection microwave, OTG and gas stove.</large></p>
+			</div>			
+		</div>
+
+		<div class="row" id="features">
+			<div class="col-sm-4 feature">
+				<div class="panel">
+					<div class="panel-heading">
+						<h3 class="panel-title">Courses!</h3>
+					</div>
+					<img src="images/general/Chefs-Choice-308.jpg" alt="Courses"><br>
+					<a href="Courses.html" target="_blank" class="btn btn-warning button-block">Click to see Course Details</a>
+				</div>
+			</div>
+			<div class="col-sm-4 feature">
+				<div class="panel">
+					<div class="panel-heading">
+						<h3 class="panel-title">BLOG!</h3>
+					</div>
+					<img src="images/general/blog.jpg" alt="CSS3">
+					<a href="https://www.udemy.com" target="_blank" class="btn btn-danger button-block">Click here to see the Receipees.</a>
+				</div>
+			</div>
+			<div class="col-sm-4 feature">
+				<div class="panel">
+					<div class="panel-heading">
+						<h3 class="panel-title">Gallery!</h3>
+					</div>
+					<img src="images/general/gallery.jpg" alt="Bootstrap 3">
+					<a href="https://www.getbootstrap.com" target="_blank" class="btn btn-info button-block">Click here to See the Gallery</a>
+				</div>
+			</div>			
+		</div>
+		<div class="row" id="moreInfo">
+			<div class="col-sm-6">		
+				<h3>Neat Tabable Content</h3>	
+				<div class="tabable">
+					<ul class="nav nav-tabs">
+						<li class="active"><a href="#tab1" data-toggle="tab">Section 1</a></li>
+						<li><a href="#tab2" data-toggle="tab">Section 2	</a></li>
+					</ul>
+
+					<div class="tab-content">
+						<div class="tab-pane active" id="tab1">
+							<h4><span class="glyphicon glyphicon-map-marker"></span> Our Location<small>More like our favorite serve spot</small></h4>
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-md-8 col-xs-12 col-sm-12">
+										<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15554.464313705124!2d77.69369464999998!3d12.9323792!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1467714233436" width='100%' frameborder="0" style="border:0" allowfullscreen></iframe>
+									</div></div></div>
+									<p>Kadubisnahalli is a village in the tehsil/mandal of Bangalore South in the Bangalore Urban district of Karnataka. </p>
+									<p>Taluk Name : Bangalore<br>
+										District : Bangalore <br>
+										State : Karnataka <br>
+										Division : Bangalore <br>
+										Language : Kannada, Telugu, English, Hindi And Others<br>
+										Time zone:	IST (UTC+5:30) <br>
+										Elevation / Altitude: 874 meters. Above Seal level <br>
+										Telephone Code / Std Code: 080 <br>
+										Enter Pin Code</p>
+										<p>Kadubisanahalli current Weather<br>
+											Current Temperature is 25 °C <br>
+											Humidity: 78% <br>
+											Wind : From WSW at 30 kph <br>
+											observeed on Fri Time: 17:27:47</p>
+										</div>						
+
+
+										<div class="tab-pane" id="tab2">
+											<h4>Left floated Picture<small>Using Placehold it</small></h4>
+											<img src="images/beutiful.png" width="300" height="100" frameborder="0" style="border:0"  class="thumbnail">
+											<p><strong>The Schopenhauer Method</strong><br>
+												Arthur Schopenhauer was a German philosopher who lived in the late 18th and early 19th centuries. In his most famous work, The World as Will and Idea, he expresses the idea that the will is a universal and omnipresent force, not something that belongs to the individual. He holds that this will is more important than the rational mind, though it is also the root of all suffering.</p>
+												<p><strong>Fantasy</strong><br> Guido creates fictitious worlds for those around him. He calls Dora "princess" and claims to be a prince himself. Though they both know the truth, they both are more than willing to entertain the fantasy and play the game. In this way, Guido's fictions are a form of escapism, a way for him to cope with reality and imbue it with beauty.</p>
+												<a href="#myModal" role="button" class="btn btn-warning" data-toggle="modal"><span class="glyphicon glyphicon-hand-up"></span>Click here for Modal Window</a>
+
+												<div class="modal fade" id="myModal">
+
+													<div class="modal-dialog">
+
+														<div class="modal-content">
+															<div class="modal-header">
+																<button class="close" data-dismiss="modal">&times;</button>
+																<h4 class="modal-title">Hello Modal window</h4>
+															</div>
+															<div class="modal-body">
+																<h4>body header</h4>
+																<p>Guido creates fictitious worlds for those around him. He calls Dora "princess" and claims to be a prince himself.</p>
+																<h4>Popover in a modal</h4>
+																<a href="/" class="btn btn-danger pop" data-toggle="popover" data-placement="top" data-original-title="You clicked it" data-contenet="I know you would..">dont click</a>
+																<h4>tool tip in modal</h4>
+																<a href="#" data-original-title="Tooltips" rel="tooltip">This link</a> should have a tooltip, and so should have <a href="#" data-original-title="Wohoo" rel="tooltip">this one</a>!
+																<p><small class="text-muted">this form doesn't do anything. just heads up</small></p>
+																<form class="form-horizontal">
+																	<div class="form-group">
+																		<label class="col-lg-2" control lebel for ="inputName">Name</label>
+																		<div class="col-lg-10">
+																			<input class="form-control" id="inputName" placeholder="Name" type="text">
+																		</div>
+																	</div>
+																	<div class="form-group">
+																		<label class="col-lg-2" control lebel for ="inputEmail">Email</label>
+																		<div class="col-lg-10">
+																			<input class="form-control" id="inputEmail" placeholder="Email" type="text">
+																		</div>
+																	</div>
+																	<div class="form-group">
+																		<label class="col-lg-2" control lebel for ="inputMessage">Message</label>
+																		<div class="col-lg-10">
+																			<textarea class="form-control" id="inputMessage" placeholder="Message" rows="3"></textarea>
+																			<button class="btn btn-success pull-right" type="submit">Submit</button>
+																			<button class="btn btn-default pull-right" data-dismiss="modal" type="button">Close</button>
+																		</div>
+																	</div>																									
+																</form>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div><!--End of tab2-pane-->
+										</div><!--End of tab-Content-->
+									</div>
+								</div>
+								<div class="col-sm-6">
+									<h3></h3>
+									<h4>Corsses</h4>
+									<div class="list-group">
+										<a href="#" class="list-group-item">
+											<h4 class="list-goup-itme-heading">Kale</h4>
+											<p> A plant (Brassica oleracea var. acephala) in the mustard family, having dark green, spreading, usually crinkled leaves that are eaten as a vegetable. Also called borecole, cole, colewort.</p>
+										</a>
+										<a href="#" class="list-group-item">
+											<h4 class="list-goup-itme-heading">Carot</h4>
+											<p>The usually tapering, elongate, fleshy orange root of this plant, eaten as a vegetable.</p>
+										</a>
+										<a href="#" class="list-group-item">
+											<h4 class="list-goup-itme-heading">Oats</h4>
+											<p>Any of various grasses of the genus Avena, especially A. sativa, widely cultivated for their edible grains.
+												The grain of any of these plants, used as food and fodder.</p>
+											</a>					
+										</div>
+									</div>
+								</div>
+
+								<div class="row" id="moreCorousel">
+									<div class="col-12">
+										<h3>Learn more</h3>
+										<div class="thumbnails row">
+											<div class="col-6">
+												<div class="thumbnail">
+													<img src="images/freeaccess.png" alt="web hosting 101">
+													<div class="label label-success price"><span class="glyphicon glyphicon-tag"></span><sup>$</sup>6.3</div>
+													<div class="caption">
+														<h3>FreeAccess</h3>
+														<p>This template suits for interior design company or furniture production company. This is simple and cost effective one page template aimed at creative professionals. It has a large set of features helping to bring your interior design business on-line in an easy and human friendly way. The theme is easy to customize, it has well structured and well commented HTML5 code. Being built with bootstrap the code is valid and helps to promote your website in search engines easily.</p>
+														<p><a href="http://www.sourcecode.guru/html5/freeaccess-html-template/" class="btn btn-primary" class="btn btn-small btn-link">Learn more</p></a>
+													</div>
+												</div>	
+											</div>
+											<div class="col-6">
+												<div class="thumbnail">
+													<img src="images/selfdone.png" alt="web hosting 101">
+													<div class="label label-success price"><span class="glyphicon glyphicon-tag"></span><sup>$</sup>11.9</div>
+													<div class="caption">
+														<h3>Selfdone!</h3>
+														<p>ABOUT SELFDOM - MULTI-CONCEPT PORTFOLIO -FREELANCER / AG:
+															Selfdom is a new portfolio concept for creative agencies and freelancers. This template helps graphic designers, illustrators, photographers or any kind of creative to create a quick & easy portfolio to showcase their work with a creative and distinctive touch, in the most clean and minimal way.</p>
+															<p><a href="http://www.sourcecode.guru/html5/selfdom-multi-concept-portfolio-freelancer-agency/" class="btn btn-primary" class="btn btn-small btn-link">Learn more</p></a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>		
+								</div>
+							</div>
+
+							<footer>
+								<div class="container">
+									<div class="row">
+										<div class="col-sm-2">
+											<h6>Copyright &copy; 2016 {Rashmi}</h6>
+										</div>
+										<div class="col-sm-4">
+											<h6>About us</h6>
+											<p>Poutine tattooed polaroid mixtape pinterest squid wolf, you probably haven't heard of them craft beer hella retro fanny pack gochujang. Tumblr beard craft beer selfies blue bottle paleo.</p>
+										</div>
+										<div class="col-sm-2">
+											<h6>Navigation</h6>
+											<ul class="unstyled">
+												<li><a href="#">Home</a></li>
+												<li><a href="#">Services</a></li>
+												<li><a href="#">Recipe Gallery</a></li>
+												<li><a href="#">About</a></li>
+												<li><a href="#">Contact Us</a></li>
+											</ul>					
+										</div>
+										<div class="col-sm-2">
+											<h6>Follow us</h6>
+											<ul class="unstyled">
+												<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a></li>
+												<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a></li>
+												<li><a href="#"><i class="fa fa-paypal" aria-hidden="true"></i> Paypal</a></li>
+												<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i> Google plus</a></li>
+												<li><a href="#"><i class="fa fa-google" aria-hidden="true"></i> Google</a></li>
+											</ul>					
+										</div>
+										<div class="col-sm-2">
+											<h6>Coded with<span class="glyphicon glyphicon-heart"></span>By Jyotirmani</h6>					
+										</div>				
+									</div>			
+								</div>
+							</footer>
+
+							<!-- All Javascript at the bottom of the page for faster page loading -->
+
+							<!-- First try for the online version of jQuery-->
+							<script src="http://code.jquery.com/jquery.js"></script>
+
+							<!-- If no online access, fallback to our hardcoded version of jQuery -->
+							<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+
+							<!-- Bootstrap JS -->
+							<script src="bootstrap/js/bootstrap.min.js"></script>
+
+							<!-- Custom JS -->
+							<script src="includes/js/script.js"></script>
+
+		</body>
+</html>
+
