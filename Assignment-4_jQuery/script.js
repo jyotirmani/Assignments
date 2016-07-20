@@ -1,12 +1,10 @@
-$(document).ready(function(){
-
-		$("#do-search").on('click', function(){
+$("#do-search").on('click', function(){
 
 		//Get data from input box
 		var searchTitle = $('#movie-title').val();
 
 		//Build our URI with the movie title
-		var sURL = "http://www.omdbapi.com/?s=" + searchTitle + "&y=&plot=short&r=json";
+		var sURL = "http://www.omdbapi.com/?s=" + searchTitle;
 
 		//Grab our container and assign it to variable for later use
 		var container = $('#container');
@@ -19,20 +17,16 @@ $(document).ready(function(){
 			method: 'GET',
 			url: sURL,
 			success: function(results){
-				// console.log("Done: ", results);
+				 console.log("Done: ", results);
 				var movies= results.Search;
 				for (var i = 0; i< movies.length; i++) {
-					container.append('<li><img src="' +movies[i].Poster + '"/></li>'+
-						'<li>' + movies[i].Title + '</li>' +
-						'<li>' + movies[i].Type + '</li>' +
-						'<li>' + movies[i].Year + '</li>');
-
+					var info='<tr><td>'+movies[i].Title+'</td><td>'+
+										movies[i].Type+'</td><td>'+
+										movies[i].imdbID+'</td><td>'+
+										movies[i].Year+'</td><td>'+
+										'<img src='+movies[i].Poster+'></td></tr>';
+          			 $(info).appendTo('#table');  	
 				}
-			},
-			error: function(error){
-				console.error('@ERROR', error);
 			}
 		});
-
-	});//End search
 })
