@@ -1,48 +1,54 @@
-// This file is taken from test6.js
+/*Author: Ashok Kumar V
+Created: 18-July-2016
+Description: Creates 3 json files required to plot graph given in the asssignment. For more details refer Readme.txt
+*/
 
+//Variable Declaration
 var fs = require('fs'),
     readline = require('readline'),
-    stream = require('stream'),
-    data;
-    instream = fs.createReadStream('./Indicators.csv'),
-    outstream = new stream;
+    stream = require('stream');
+var data;
+var instream = fs.createReadStream('./Indicators.csv');
+var outstream = new stream;
 outstream.readable = true;
 outstream.writable = true;
-
-var rl = readline.createInterface({
-    input: instream,
-    output: outstream,
-    terminal: false
-});
-
-var optio = new Object();
-optio.flag = "a";
-optio.encoding = "utf8"
-
-var i = 1960,
-    ruralPopulation,
-    urbanPopulation,
-    urbanPopulationGrowth,
-    totalGrowth,
-    year,
-    population = [0.0, 0.0, 0.0,0.0,0.0,0.0,0.0,0.0,0.0],
-    countryList = ['India','Bangladesh','China'],
-    tempData = {},
+var i = 1960;
+var ruralPopulation;
+var urbanPopulation;
+var urbanPopulationGrowth;
+var totalGrowth;
+var year;
+var tempData = {};
 var jsonData = [];
 var tempData1 = {};
 var tempData2 = {};
 var jsonData1 = [];
 var jsonData2 = [];
+var population = [0.0, 0.0, 0.0,0.0,0.0,0.0,0.0,0.0,0.0];
+var countryList = ['India','Bangladesh','China'];
+var rl = readline.createInterface({
+    input: instream,
+    output: outstream,
+    terminal: false
+});
+//options 
+var optio = new Object();
+optio.flag = "a";
+optio.encoding = "utf8"
 
 
-console.log(countryList.length);
+//readline one by one
 rl.on('line', function(line) {
+    //regular expression to match and split line
     var arr = line.match(/(".*?"|[^",]+)(?=\s*,|\s*$)/g);
 
-    if (arr[4] == i && arr[2].match(/Rural population \(\% of total population\)/)) {
+    //Get the rural population data
+    if (arr[2] == undefined) {
+
+    } else if (arr[4] == i && arr[2].match(/Rural population \(\% of total population\)/)) {
         
         if (arr[0] == 'India') {
-            console.log(arr[0], arr[2], arr[4], i);
+            
             ruralPopulation = arr[5];
             tempData["Growth"] = ruralPopulation;
             tempData["Year"] = i;
@@ -50,16 +56,21 @@ rl.on('line', function(line) {
             jsonData.push(tempData);
             tempData = {};
         }
+
         for (j = 0; j < countryList.length; j = j + 1) {
 
-            if (arr[0] == countryList[j]) {
-                console.log(arr[0], arr[2], arr[4], arr[5]);
-                population[j] = parseFloat(population[j]) + parseFloat(arr[5]);
-                console.log(parseFloat(population[j]) + parseFloat(arr[5]), j, arr[0]);
+            if (arr[0] == countryList[j]) {        
+                population[j] = parseFloat(population[j]) + parseFloat(arr[5]);        
             }            
         }        
-    } // Get the Urban population (%total)
-    else if (arr[4] == i && arr[2].match(/Urban population \(\% of total\)/)) {
+
+    }
+
+
+    // Get the Urban population (%total)
+    if (arr[2] == undefined) {
+
+    } else if (arr[4] == i && arr[2].match(/Urban population \(\% of total\)/)) {
         if (arr[0] == 'India') {
             console.log(arr[0], arr[2], arr[4], i);
             urbanPopulation = arr[5];
@@ -69,20 +80,22 @@ rl.on('line', function(line) {
             tempData["Growth"] = urbanPopulation;
             jsonData.push(tempData);
             tempData = {};
-            //console.log(urbanPopulation);
+            
         }
         for (j = 0; j < countryList.length; j = j + 1) {
 
-            if (arr[0] == countryList[j]) {
-                console.log(arr[0], arr[2], arr[4], arr[5]);
-                population[j+3] = parseFloat(population[j+3]) + parseFloat(arr[5]);
-                console.log(parseFloat(population[j+3]) + parseFloat(arr[5]), j, arr[0]);
+            if (arr[0] == countryList[j]) {            
+                population[j+3] = parseFloat(population[j+3]) + parseFloat(arr[5]);            
             }
             
         }
 
-    } // Get the Urban population growth
-    else if (arr[4] == i && arr[2].match(/Urban population growth \(annual \%\)/)) {
+    }
+
+    // Get the Urban population growth
+    if (arr[2] == undefined) {
+
+    } else if (arr[4] == i && arr[2].match(/Urban population growth \(annual \%\)/)) {
 
         if (arr[0] == 'India') {
             console.log(arr[0], arr[2], arr[4], i);
@@ -96,11 +109,16 @@ rl.on('line', function(line) {
             jsonData1.push(tempData1);
             tempData1 = {};
         }
+
     }
+
 
 });
 
+//At the end of reading csv file
 rl.on('close', function() {
+
+    //Display the values
     console.log("India, Rural Population", population[0]);
     console.log("Bangladesh, Rural Population", population[1]);
     console.log("China, Rural Population", population[2]);
@@ -126,7 +144,8 @@ rl.on('close', function() {
     jsonData2.push(tempData2);
     tempData2 = {};
 
-    fs.writeFileSync("test6.json", JSON.stringify(jsonData), optio);
-    fs.writeFileSync("test61.json", JSON.stringify(jsonData1), optio);
-    fs.writeFileSync("test62.json", JSON.stringify(jsonData2), optio);
+    //Generate json output files
+    fs.writeFileSync("./MultiSeriesChart/multiSeriesLine.json", JSON.stringify(jsonData), optio);
+    fs.writeFileSync("./AreaChart/areaChart.json", JSON.stringify(jsonData1), optio);
+    fs.writeFileSync("./StackedBarChart/stackedBarChart.json", JSON.stringify(jsonData2), optio);
 });

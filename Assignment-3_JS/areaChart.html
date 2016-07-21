@@ -1,50 +1,14 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
-<style>
-
-  body {
-    font: 10px sans-serif;
-  }
-
-  .axis path,
-  .axis line {
-    fill: none;
-    stroke: #000;
-    shape-rendering: crispEdges;
-  }
-
-text.shadow {
-  stroke: white;
-  stroke-width: 2px;
-  opacity: 0.9;
-}
-
-.line {
-  fill: none;
-  stroke: #000;
-  stroke-width: 1.5px;
-}
-  .area {
-    fill: steelblue;
-  }
-
-  .axis text {
-    font-family: Times;
-    font-size: 16px;
-  }
-  
-  .legend {
-    font-size: 10px;
-    font-weight: bold;
-  }
-</style>
-
+<html>
+  <meta charset="utf-8">
+  <link href="css/style.css" rel="stylesheet">
 <body>
+<h2 align="center">Urban population growth (annual %) for India over the years supplied (1960 - 2015)</h2>
   <script src="//d3js.org/d3.v3.min.js"></script>
   <script>
 
-    var margin = {top: 100, right: 20, bottom: 100, left: 100},
-    width = 1400 - margin.left - margin.right,
+    var margin = {top: 100, right: 20, bottom: 100, left: 30},
+    width = 1200 - margin.left - margin.right,
     height = 700 - margin.top - margin.bottom;
 
     var x = d3.time.scale()
@@ -120,3 +84,6 @@ text.shadow {
     });
 
   </script>
+  <a href="index.html">Click here to go Home Page</a>
+</body>
+</html>
