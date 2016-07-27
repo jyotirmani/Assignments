@@ -1,0 +1,25 @@
+.row{
+	margin-left: 0px;
+	margin-right: 20px
+}
+
+h2 {
+	margin-left: 210px;
+	text-indent: 50px;
+
+}
+
+h3 {
+	margin-left: 0px;
+	margin-right: 0px
+}
+
+textarea {
+	margin-left: 210px;
+}
+
+.pagination {
+	margin-bottom: 0px;
+	margin-left: 700px;
+	align: center;
+}

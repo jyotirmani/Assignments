@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Employee Database</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse1">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><h5>Employee Database</h5></a>
+		</div>
+
+		<div class="collapse navbar-collapse " id="collapse1">
+
+			<ul class="nav navbar-nav navbar-right" id="login">
+				<li><a href="#myModal" data-toggle="modal"> Add New Record</a></li>
+				<li  data-toggle="tooltip" title="Mail us"><a href="#"><span class="glyphicon glyphicon-envelope">Email</span></a></li>
+
+
+				<li><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Log in <span class="glyphicon glyphicon-user"></span><span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#"><span class="glyphicon glyphicon-wrench"></span>  Settings</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-refresh"></span> update</a></li>
+						<li><a href="#"> <span class="glyphicon glyphicon-eye-open"></span> Active logging</a></li>
+					</ul>
+
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+
+	<div class="modal fade" id="myModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Insert Your data</h4>
+				</div><!--End of modal header-->
+				<div class="modal-body">
+					<form id="modalform">
+						<input type="text" name="Name" id="name1" placeholder="Name"><br>
+						<input type="text" name="Gender" id="gender1" placeholder="Gender"><br>
+						<input type="text" name="email" id="email1" placeholder="Email"><br>
+						<input type="text" name="contact" id="contact1" placeholder="Contact"><br><br>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-success pull-right" type="submit" id="add">Submit</button>
+					<button type="button" class="btn btn-success pull-right" data-dismiss="modal">Cancel</button>
+				</div>
+			</div><!--End of modal Content-->
+		</div><!--End of modal dialog-->
+	</div><!--End of modal fade-->
+
+	<div class="modal fade" id="myModal2">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title">Update Your data</h4>
+				</div><!--End of modal header-->
+				<div class="modal-body">
+					<form id="modalform">
+						<input type="text" name="ID" id="id2" placeholder="Employee Id">
+						<input type="text" name="Name" id="name2">Name<br>
+						<input type="text" name="Gender" id="gender2">Gender<br>
+						<input type="text" name="email" id="email2">Email<br>
+						<input type="text" name="contact" id="contact2">Contact<br><br>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-success pull-right" type="submit" id="updated">Update</button>
+					<button class="btn btn-success pull-right" type="button"  data-dismiss="modal">Cancel</button>
+				</div>
+			</div><!--End of modal Content-->
+		</div><!--End of modal dialog-->
+	</div><!--End of modal fade-->
+
+
+
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<form class="search " method="get">
+				<h2>Search Employee</h2>
+				<input type="button" value="Load Complete Data" id ="btn1" class="submit btn-primary">
+				<input type="button" value="Add New Entry" id ="btn2" class="submit btn-primary">	
+				<textarea placeholder="Enter Employee ID" class="col-lg-4 col-md-4 col-sm-4 col-xs-4 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-offset-2"></textarea>	
+			</form>
+			
+		</div>
+
+	</div>
+	<div class="disp col-lg-12 col-md-12 col-sm-12 col-xs-12" id="info">
+		<h4 class="col-lg-12 col-md-12 col-md-12 sr-only">Yours' search results:</h4>
+		<div class="headings row"> 
+			<div class="col-lg-1" id="col2id">
+				<h3>ID</h3>
+			</div>
+			<div class="col-lg-2" id="col2name">
+				<h3>Name</h3>
+			</div>
+			<div class="col-lg-1" id="col2gender">
+				<h3>Gender</h3>
+			</div>	
+			<div class="col-lg-2" id="col2email">
+				<h3>Email id</h3>
+			</div>
+			<div class="col-lg-2" id="col2contact">
+				<h3>Contact</h3>
+			</div>
+			<div class="col-lg-4" id="col2usractn">
+				<h3 class="usr-actn">User-action</h3>
+			</div>		
+		</div>
+
+<div class="paginate">
+    <a href="#" class="first" data-action="first">&laquo;</a>
+    <a href="#" class="previous" data-action="previous">&lsaquo;</a>
+    <input type="text" readonly="readonly" data-max-page="40" />
+    <a href="#" class="next" data-action="next">&rsaquo;</a>
+    <a href="#" class="last" data-action="last">&raquo;</a>
+</div>
+
+<!-- <div class="progress">
+  <div class="progress-bar progress-bar-striped active" role="progressbar"
+  aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
+    40%
+  </div>
+</div>
+
+
+<ul class="pagination pagination-lg pagination-sm">
+  <li class="active"><a href="#">1</a></li>
+  <li><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+</ul> -->
+
+
+		<!-- generic demo style -->
+		<link rel="stylesheet" href="./css/reset.css" />
+		<link rel="stylesheet" href="./css/demo.css" />
+	
+		<!-- jqPagination styles -->
+		<link rel="stylesheet" href="./css/jqpagination.css" />
+		
+		<!-- scripts -->
+		<script src="includes/js/jquery-1.8.2.min.js"></script>
+		<script src="includes/js/jquery.jqpagination.js"></script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<script src="includes/js/modernizr-2.6.2.min.js"></script>
+		<script src="includes/js/script.js"></script>
+	</body>
+	</html>
